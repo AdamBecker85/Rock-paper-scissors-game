@@ -51,11 +51,7 @@ if( computerMove == 'kamień' && playerMove == 'papier'){
   printMessage('Ty wygrywasz!');
 } else if ( computerMove == 'nożyce' && playerMove == 'nożyce'){
   printMessage('Remis!');
-} else if ( computerMove == 'nożyce' && playerMove == 'nieznany ruch'){
-  printMessage('Graj jeszcze raz!');
-} else if ( computerMove == 'kamień' && playerMove == 'nieznany ruch'){
-  printMessage('Graj jeszcze raz!');
-} else if ( computerMove == 'papier' && playerMove == 'nieznany ruch'){
+} else if (( computerMove == 'nożyce' && playerMove == 'nieznany ruch') || ( computerMove == 'kamień' && playerMove == 'nieznany ruch') || ( computerMove == 'papier' && playerMove == 'nieznany ruch')){
   printMessage('Graj jeszcze raz!');
 }
 
